@@ -231,7 +231,7 @@ async function restoreSbtCache(
 ): Promise<void> {
   await restoreCache(
     'sbt-ivy2-cache',
-    ['~/.sbt', '~/.ivy2/cache'],
+    ['/root/.sbt', '/root/.ivy2/cache'],
     inputFiles,
     job,
     extraSharedKey,
